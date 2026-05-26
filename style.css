@@ -1,0 +1,104 @@
+.icon-primary { color: #007bff; }  /* Blue */
+.icon-secondary { color: #6c757d; }  /* Grey */
+.icon-success { color: #28a745; }  /* Green */
+.icon-danger { color: #dc3545; }  /* Red */
+.icon-warning { color: #ffc107; }  /* Yellow */
+.icon-info { color: #17a2b8; }  /* Cyan */
+.icon-light { color: #f8f9fa; }  /* Light Grey */
+.icon-dark { color: #343a40; }  /* Dark Grey */
+/* General styles */
+body {
+    background: #0b0c10;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* 3D Background */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* About Us Section */
+#about {
+    position: relative;
+    overflow: hidden;
+}
+#about h2 {
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+}
+#about .list-group-item {
+    border: none;
+}
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+}
+.team-card {
+    transition: transform 0.3s ease-in-out;
+}
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+#contact .form-control {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+/* 📱 Mobile Adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    #contact .form-control {
+        font-size: 0.9rem;
+    }
+}
